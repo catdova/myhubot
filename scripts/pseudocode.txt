@@ -1,0 +1,31 @@
+*Admissions FAQ Bot*
+
+//Are remote classes recorded?//
+
+var remote-record = "are remote courses recorded";
+
+Listen for user to ask if remote classes can be recorded
+
+when user asks remote-record, bot responds to channel "Remote classes can be recorded by the course instructor with a special request from a student, but in general classes are not recorded without a heads up from the student."
+
+
+
+//who is teaching X class?//
+
+var who-is-teach = ["who is teaching", "who is the instuctor", "who the instructor will be", "who the instructor is", "instructor will be"]
+
+Listen for user to ask who the instrucor of a class is
+
+when a user asks this question, bot responds to channel "Did you know the PT-Remote Schedule Confluence page indicates all instructors scheduled for upcoming remote courses? You may be able to find out who is teaching by visiting https://generalassembly.atlassian.net/wiki/spaces/CEP/pages/135865091/PT+Remote+Schedule"
+
+
+//tool for VIS//
+var vis-tool = ["photoshop or sketch", "photoshop to sketch", "teaching photoshop", "teaching sketch"];
+
+listen for user to ask what tool the next visual design course will be
+
+when a user asks this question, bot responds to channel "The next instance of VIS on 11/10 will be taught using Sketch. Sketch is $99 and we have a 50% discount for students that the course team will send to the student before class."
+
+
+
+

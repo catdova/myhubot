@@ -27,28 +27,28 @@ module.exports = function(droid06) {
 	}
 
 	bot.respond(/(.*) who/, function(msg) {
-  var punchline;
-  punchline = msg.match[1];
-  console.log(punchline);
-  switch (punchline) {
-    case "Amos":
-      return msg.reply("A mosquito bit me!");
-      break;
-    case "Woo":
-      return msg.reply("Don't get too excited, it's only a joke.");
-      break;
-    case "Hutch":
-      return msg.reply("Bless you!");
-      break;
-    case "Radio":
-      return msg.reply("Radio not, here I come!");
-      break;
-    case "Ida":
-      return msg.reply("Ida like to be your friend!");
-      break;
-    default:
-      return msg.reply("you ruined my joke");
-  }
+  	var punchline;
+  	punchline = msg.match[1];
+ 	console.log(punchline);
+  	switch (punchline) {
+	  	case "Amos":
+	   		return msg.reply("A mosquito bit me!");
+	   		break;
+		case "Woo":
+			return msg.reply("Don't get too excited, it's only a joke.");
+  			break;
+		case "Hutch":
+			return msg.reply("Bless you!");
+		 	break;
+		case "Radio":
+			return msg.reply("Radio not, here I come!");
+			break;
+		case "Ida":
+			return msg.reply("Ida like to be your friend!");
+			break;
+		default:
+			return msg.reply("you ruined my joke");
+	  }
 });
 
 

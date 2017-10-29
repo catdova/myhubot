@@ -16,15 +16,15 @@ module.exports = function(droid06) {
 		return res.send("Maybe this will cheer you up! Why can't you hear a pterodactyl go to the bathroom? The p is silent.");
 	});
 
-	droid06.respond(/tell me a knock knock joke/), function(res){
+	droid06.respond(/tell me a knock knock joke/, function(res){
 		return res.send("Knock knock!");
-	}
+	});
 
-	droid06.respond(/who's there/), function(res){
+	droid06.respond(/who's there/, function(res){
 		var whosThere = ["Amos","Woo", "Hutch", "Radio","Ida"];
 		var rand = whosThere[Math.floor(Math.random() * whosThere.length)];
 		return res.send(rand)
-	}
+	});
 
 	droid06.respond(/(.*) who/, function(res) {
 	  	var punchline;

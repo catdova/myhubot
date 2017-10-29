@@ -16,8 +16,8 @@ module.exports = function(droid06) {
 		return msg.send("Maybe this will chear you up! Why can't you hear a pterodactyl go to the bathroom? The p is silent.");
 	};
 
-	droid06.respond(/tell me a knock knock joke), function(msg){
-		return msg.send("Knock knock!")
+	droid06.respond(/tell me a knock knock joke/), function(msg){
+		return msg.send("Knock knock!");
 	}
 
 	droid06.respond(/who's there/), function(msg){
@@ -26,7 +26,7 @@ module.exports = function(droid06) {
 		return msg.send(rand)
 	}
 
-	bot.respond(/(.*) who/, function(msg) {
+	droid06.respond(/(.*) who/, function(msg) {
   	var punchline;
   	punchline = msg.match[1];
  	console.log(punchline);

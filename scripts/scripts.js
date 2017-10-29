@@ -12,8 +12,8 @@ module.exports = function(droid06) {
 		return res.send("How does a penguin build it’s house? Igloos it together.");
 	});
 
-	droid06.hear(/Im sad/, function(msg) {
-		return msg.send("Maybe this will cheer you up! Why can't you hear a pterodactyl go to the bathroom? The p is silent.");
+	droid06.hear(/Im sad/, function(res) {
+		return res.send("Maybe this will cheer you up! Why can't you hear a pterodactyl go to the bathroom? The p is silent.");
 	});
 /*
 	droid06.respond(/tell me a knock knock joke/), function(msg){

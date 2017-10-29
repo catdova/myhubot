@@ -25,7 +25,7 @@ module.exports = function(droid06) {
 		var rand = whosThere[Math.floor(Math.random() * whosThere.length)];
 		return res.send(rand);
 	});
-
+ /*
 	droid06.respond(/(.*)+ who/, function(res) {
 	  	var punchline;
 	  	punchline = res.match[1];
@@ -51,6 +51,6 @@ module.exports = function(droid06) {
 				break;
 		}
 	});
-
+*/
 };
 

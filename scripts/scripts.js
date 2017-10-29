@@ -26,7 +26,7 @@ module.exports = function(droid06) {
 		return res.send(rand);
 	});
 
-	droid06.respond(/(.*) who/, function(res) {
+	droid06.respond(/(.*)+ who/, function(res) {
 	  	var punchline;
 	  	punchline = res.match[1];
 	 	console.log(punchline);
@@ -48,6 +48,7 @@ module.exports = function(droid06) {
 				break;
 			default:
 				return res.reply("you ruined my joke");
+				break;
 		}
 	});
 

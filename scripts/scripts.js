@@ -30,7 +30,7 @@ module.exports = function(droid06) {
  
 	droid06.respond(/(.*)+ who/, function(res) {
 	  	var punchline;
-	  	punchline = res.match[1];
+	  	punchline = res.match[0];
 	 	console.log(punchline);
 	  	switch (punchline) {
 		  	case "Amos":

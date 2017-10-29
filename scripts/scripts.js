@@ -23,6 +23,7 @@ module.exports = function(droid06) {
 	droid06.respond(/who\'s there/, function(res){
 		var whosThere = ["Amos","Woo", "Hutch", "Radio","Ida"];
 		var rand = whosThere[Math.floor(Math.random() * whosThere.length)];
+		console.log(rand);
 		return res.send(rand);
 	});
  /*

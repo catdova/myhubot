@@ -7,15 +7,15 @@ module.exports = function(droid06) {
 	droid06.respond(/Tell me a joke/, function(res) {
 		return res.send("Want to hear a joke about the newspaper? Nevermind... it's tearable!");
 	});
-/*
+
 	droid06.respond(/Tell me another joke/, function(res) {
 		return res.send("How does a penguin build it’s house? Igloos it together.");
 	});
 
-	droid06.hear(/I'm sad/), function(msg) {
+	droid06.hear(/I'm sad/, function(msg) {
 		return msg.send("Maybe this will cheer you up! Why can't you hear a pterodactyl go to the bathroom? The p is silent.");
-	};
-
+	});
+/*
 	droid06.respond(/tell me a knock knock joke/), function(msg){
 		return msg.send("Knock knock!");
 	}

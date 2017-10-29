@@ -13,7 +13,7 @@ module.exports = function(droid06) {
 	});
 
 	droid06.hear(/I'm sad/), function(msg) {
-		return msg.send("Maybe this will chear you up! Why can't you hear a pterodactyl go to the bathroom? The p is silent.");
+		return msg.send("Maybe this will cheer you up! Why can't you hear a pterodactyl go to the bathroom? The p is silent.");
 	};
 
 	droid06.respond(/tell me a knock knock joke/), function(msg){
@@ -52,5 +52,5 @@ module.exports = function(droid06) {
 });
 
 */
-}
+};
 

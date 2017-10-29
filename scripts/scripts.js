@@ -12,7 +12,7 @@ module.exports = function(droid06) {
 		return res.send("How does a penguin build it’s house? Igloos it together.");
 	});
 
-	droid06.hear(/I'm sad/, function(msg) {
+	droid06.hear(/I\'m sad/, function(msg) {
 		return msg.send("Maybe this will cheer you up! Why can't you hear a pterodactyl go to the bathroom? The p is silent.");
 	});
 /*

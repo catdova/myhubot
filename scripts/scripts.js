@@ -20,7 +20,7 @@ module.exports = function(droid06) {
 		return res.send("Knock knock!");
 	});
 
-	droid06.respond(/(who\'s there)/, function(res){
+	droid06.respond(/who's there/, function(res){
 		var whosThere = ["Amos","Woo", "Hutch", "Radio","Ida"];
 		console.log(whosThere);
 		var rand = whosThere[Math.floor(Math.random() * whosThere.length)];
@@ -28,9 +28,9 @@ module.exports = function(droid06) {
 		return res.send(rand);
 	});
  
-	droid06.respond(/((.*)+ who)/, function(res) {
+	droid06.respond(/^(.*)+ who/, function(res) {
 	  	var punchline;
-	  	punchline = res.match[0];
+	  	punchline = res.match[1];
 	  	console.log(res.match);
 	 	console.log(punchline);
 	  	switch (punchline) {

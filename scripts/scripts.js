@@ -20,7 +20,7 @@ module.exports = function(droid06) {
 		return res.send("Knock knock!");
 	});
 
-	droid06.respond(/who\'s there/, function(res){
+	droid06.respond(/whos there/, function(res){
 		var whosThere = ["Amos","Woo", "Hutch", "Radio","Ida"];
 		console.log(whosThere);
 		var rand = whosThere[Math.floor(Math.random() * whosThere.length)];
